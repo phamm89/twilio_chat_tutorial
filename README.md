@@ -1,2 +1,2 @@
-# twilio_chat_tutorial
-Following tutorial to create a chat application using Twilio and Django
+# Twilio Chat Tutorial
+I am creating a chat application following a tutorial using Twilio and Django. 
