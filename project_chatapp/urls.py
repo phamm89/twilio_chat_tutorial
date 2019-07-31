@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
+from django.conf.urls import include, url
 
 urlpatterns = [
-    path(r'^$', core_views.all_rooms, name="all_rooms"),
-    path(r'rooms/(?P<slug>[-\w]+)/$', core_views.room_detail, name="room_detail"),
     path('admin/', admin.site.urls),
+    url(r'^', include('core.urls')),
 ]
